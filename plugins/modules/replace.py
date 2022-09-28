@@ -7,10 +7,7 @@ logger = logging.getLogger(__name__)
 import asyncio
 from pyrogram import Client, filters
 from plugins import RE1TXT, RE2TXT, RE3TXT, RE4TXT, RE5TXT, RE6TXT, REPLACED
-if bool(os.environ.get("WEBHOOK", False)):
-    from sample_config import Config
-else:
-    from config import Config
+from config import Config
 
 
 usercaption_position = Config.CAPTION_POSITION
