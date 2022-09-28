@@ -13,10 +13,7 @@ from pyrogram.types import InputMediaPhoto,InputMediaDocument,InputMediaVideo,In
 from asyncio import TimeoutError
 import os
 PACK = filters.animation | filters.document| filters.video|filters.audio |filters.photo
-if bool(os.environ.get("WEBHOOK", False)):
-    from sample_config import Config
-else:
-    from config import Config
+from config import Config
 
 
 #start buttons 
