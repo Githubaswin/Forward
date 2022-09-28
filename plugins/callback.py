@@ -3,10 +3,7 @@ from pyrogram import Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from plugins import *
 from translation import Translation
-if bool(os.environ.get("WEBHOOK", False)):
-    from sample_config import Config
-else:
-    from config import Config
+from config import Config
 
 # call_backs 
 
