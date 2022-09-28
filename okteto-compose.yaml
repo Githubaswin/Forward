@@ -1,0 +1,15 @@
+version: "3.10"
+services:
+  worker:
+    build: .
+    environment:
+      - APP_ID=${APP_ID}
+      - API_HASH=${API_HASH}
+      - TG_BOT_TOKEN=${TG_BOT_TOKEN}
+      - CAPTION_POSITION=${CAPTION_POSITION}
+      - AUTH_USERS=${AUTH_USERS}
+      - CAPTION_TEXT=${CAPTION_TEXT}
+      - FROM_CHANNELS=${FROM_CHANNELS}
+      - TO_CHATS=${TO_CHATS}
+      - RE1TXT=${RE1TXT}
+      - REPLACED=${REPLACED}
